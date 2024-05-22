@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="frog animate-on-scroll-frog3" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.42 90.36">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #c5d11b;
+              }
+        
+              .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+                stroke: #231f20;
+                stroke-miterlimit: 10;
+                stroke-width: 1.42px;
+              }
+        
+              .cls-2 {
+                 fill: #843b3b;
+              }
+        
+              .cls-3 {
+                fill: #dd5827;
+              }
+        
+              .cls-4 {
+                fill: none;
+              }
+        
+              .cls-5 {
+                fill: #231f20;
+              }
+            </style>
+          </defs>
+          <g id="frog">
+            <g>
+              <path id="body--sick" class="cls-1" d="M50.39,6.25s4.83-2.77,13.08-2.77,13.98,3.28,13.98,3.28c0,0,19.19-17.46,24.2,6.94,0,0,5.31,15.01,6.94,22.87,0,0,22.56-29,15.93,7.76,0,0-7.7,21.6-20.49,33.21,0,0,37.93,1.33,23.35,5.05-3.69.94-7.87.13-7.87.13,0,0,5.96,2.76,6.25,5.31s-28.2-6.84-36.77-1.33c0,0-24.81,6.84-53.19-.31,0,0-6.94-7.37-25.63,3.26,0,0-5.31-.09,3.88-6.32,0,0-1.12-.61-10.52.92s6.64-7.45,19.6-7.25c0,0-14.91-19.3-17.05-35.02-2.14-15.72,7.04-11.13,13.17-.2,0,0,2.04-14.29,6.64-26.34,0,0,4.9-23.69,24.5-9.19Z"/>
+              <path id="arm--left" class="cls-4" d="M39.39,57.91s-.38,22.67,1.76,28.64c0,0,2.45-4.67,8.58,1.61,0,0-2.68-21.06-1.38-30.25"/>
+              <path id="arm--right" class="cls-4" d="M86,58.3s-.51,22.66-2.89,28.55c0,0-2.26-4.76-8.63,1.27,0,0,3.51-20.93,2.57-30.17"/>
+              <path id="mouth" class="cls-4" d="M47.64,19.19s15.72,0.62,31.45,0"/>
+              <circle id="eye--left--sick" class="cls-2" cx="37.97" cy="13.02" r="5.3"/>
+              <circle id="eye--right--sick" class="cls-2" cx="91.12" cy="13.02" r="5.3"/>
+              <circle id="pupil--left" class="cls-5" cx="38.91" cy="12.2" r="3.62"/>
+              <circle id="pupil--right" class="cls-5" cx="90.02" cy="11.6" r="3.62"/>
+              <ellipse id="cheek--left--sick" class="cls-3" cx="29.07" cy="23.63" rx="6.23" ry="5.36" transform="translate(-4.65 39.95) rotate(-64.93)"/>
+              <ellipse id="cheek--right--sick" class="cls-3" cx="99.17" cy="23.63" rx="5.36" ry="6.23" transform="translate(-.67 44.24) rotate(-25.07)"/>
+            </g>
+          </g>
+        </svg>

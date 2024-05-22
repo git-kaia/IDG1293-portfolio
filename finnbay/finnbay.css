@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "finn-regular";
+  src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2);
+}
+@font-face {
+  font-family: "finn-bold";
+  src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2);
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f6f8fb;
+  font-family: "finn-regular";
+}
+
+.login-page {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 30px 20px;
+  margin: 0 auto;
+}
+
+.login-card {
+  background-color: white;
+  padding: 3%;
+  margin: 5% 5% 10% 0;
+  width: 470px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px #adadad;
+  max-width: 50%;
+}
+.login-card__nav {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-card__nav__finn-logo img {
+  width: 100%;
+  max-width: 40px;
+}
+.login-card__nav__schibsted-logo img {
+  width: 100%;
+  max-width: 110px;
+}
+.login-card__main {
+  display: flex;
+  flex-direction: column;
+}
+.login-card__main * {
+  padding-bottom: 5%;
+}
+.login-card__main__h1 {
+  font-family: "finn-bold";
+  font-size: 26px;
+  line-height: 25px;
+}
+.login-card__main__form {
+  background-color: #e5e5e5;
+  color: #767676;
+  padding: 17px 12px 20px 5px;
+  border: none;
+  border-bottom: 1px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 14px;
+}
+.login-card__main__form:hover {
+  background-color: #cccccc;
+  color: #767676;
+  padding: 17px 12px 20px 5px;
+  border: none;
+  border-bottom: 1px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 14px;
+}
+.login-card__main__form:focus {
+  background-color: #e5e5e5;
+  color: #1d72db;
+  padding: 8px 12px 29px 5px;
+  border: none;
+  border-bottom: 3px solid #1d72db;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 12px;
+  outline: none;
+}
+.login-card__main__necesary {
+  padding-top: 3%;
+  color: #767676;
+}
+.login-card__main__forgotten-password {
+  color: #1d72db;
+  font-size: 15.2px;
+}
+.login-card__main__checkbox {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+}
+.login-card__main__checkbox__input {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+.login-card__main__checkbox__label {
+  font-size: 14px;
+  font-family: "finn-bold";
+  color: #767676;
+  padding-left: 2px;
+  padding-top: 4px;
+}
+.login-card__main__submit {
+  border: none;
+  background-color: #1d72db;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  font-family: "finn-bold";
+  margin: 16px 0 0;
+  padding: 16px;
+  border-radius: 10px;
+}
+.login-card__main__submit:hover {
+  background-color: #003e9d;
+  box-shadow: 2px 2px 10px #adadad;
+}
+.login-card__main__submit:active {
+  background-color: #6381b4;
+  box-shadow: 2px 2px 10px #adadad;
+}
+.login-card__main__submit:visited {
+  background-color: #adadad;
+  color: #767676;
+}
+.login-card__main__create-account {
+  font-size: 17px;
+  text-align: center;
+  margin: 16px 0 0;
+  padding: 16px;
+  border-radius: 10px;
+  color: #0063fb;
+  font-family: "finn-bold";
+}
+.login-card__main__create-account:hover {
+  box-shadow: 2px 2px 10px #adadad;
+  font-family: "finn-bold";
+  background-color: #f8fafc;
+}
+
+.notifications-card {
+  background-color: #f1f9ff;
+  margin-bottom: 150px;
+  max-width: 600px;
+}
+.notifications-card__iphone {
+  width: 100%;
+  max-width: 200px;
+  padding-bottom: 3%;
+  margin: 0 auto;
+}
+.notifications-card__iphone__img {
+  display: block;
+  margin: 0 auto;
+}
+.notifications-card__content1 {
+  padding: 0px 0px 8px;
+  padding: 5px 32px;
+  text-align: center;
+  color: #767676;
+  font-size: 16px;
+  line-height: 22px;
+}
+.notifications-card__content1__link {
+  color: #1d72db;
+}
+.notifications-card__content2 {
+  margin: 0px 0px 8px;
+  color: #767676;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  padding-top: 5px;
+}
+.notifications-card__content2__link {
+  text-decoration: none;
+  color: #1d72db;
+}/*# sourceMappingURL=finnbay.css.map */

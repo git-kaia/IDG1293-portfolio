@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.1 148.7">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #88a63d;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        opacity: .5;
+      }
+
+      .cls-2 {
+        fill: #acc943;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <rect class="cls-2" y="5" width="67.1" height="143.7"/>
+      <rect class="cls-1" x="12.9" width="41.1" height="5.1"/>
+      <g class="cls-4">
+        <rect class="cls-3" x="4.3" y="9.3" width="26.5" height="13.2"/>
+        <rect class="cls-3" x="36.2" y="9.3" width="26.5" height="13.2"/>
+      </g>
+      <g class="cls-4">
+        <rect class="cls-3" x="4.3" y="25.5" width="26.5" height="13.2"/>
+        <rect class="cls-3" x="36.2" y="25.5" width="26.5" height="13.2"/>
+      </g>
+      <g class="cls-4">
+        <rect class="cls-3" x="4.3" y="41.7" width="26.5" height="13.2"/>
+        <rect class="cls-3" x="36.2" y="41.7" width="26.5" height="13.2"/>
+      </g>
+      <g class="cls-4">
+        <rect class="cls-3" x="4.3" y="57.9" width="26.5" height="13.2"/>
+        <rect class="cls-3" x="36.2" y="57.9" width="26.5" height="13.2"/>
+      </g>
+      <g class="cls-4">
+        <rect class="cls-3" x="4.3" y="74.1" width="26.5" height="13.2"/>
+        <rect class="cls-3" x="36.2" y="74.1" width="26.5" height="13.2"/>
+      </g>
+      <rect class="cls-1" x="16" y="92.2" width="35.1" height="52.7"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85.9 249.9">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fffcf0;
+        isolation: isolate;
+        opacity: .5;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #8c9254;
+      }
+
+      .cls-3 {
+        fill: #cfcd80;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <rect class="cls-3" x="2.4" y="48.3" width="81.3" height="201.6"/>
+      <rect class="cls-3" x="8.7" y="1.8" width="68.7" height="47.7"/>
+      <rect class="cls-2" y="46.5" width="85.9" height="3.5"/>
+      <rect class="cls-2" x="5.6" width="74.6" height="3.5"/>
+      <rect class="cls-1" x="8.5" y="54.4" width="68.8" height="13.9"/>
+      <rect class="cls-1" x="8.5" y="70.8" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="22.9" y="70.8" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="37.2" y="70.8" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="51.5" y="70.8" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="65.9" y="70.8" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="8.5" y="85.2" width="68.8" height="13.9"/>
+      <rect class="cls-1" x="8.5" y="101.5" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="22.9" y="101.5" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="37.2" y="101.5" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="51.5" y="101.5" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="65.9" y="101.5" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="8.5" y="115.9" width="68.8" height="13.9"/>
+      <rect class="cls-1" x="8.5" y="132.2" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="22.9" y="132.2" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="37.2" y="132.2" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="51.5" y="132.2" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="65.9" y="132.2" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="8.5" y="146.6" width="68.8" height="13.9"/>
+      <rect class="cls-1" x="8.5" y="162.9" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="22.9" y="162.9" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="37.2" y="162.9" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="51.5" y="162.9" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="65.9" y="162.9" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="8.5" y="177.3" width="68.8" height="13.9"/>
+      <rect class="cls-1" x="8.5" y="193.6" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="22.9" y="193.6" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="37.2" y="193.6" width="11.5" height="11.5"/>
+      <rect class="cls-2" x="28.6" y="210.7" width="13.6" height="39.2"/>
+      <rect class="cls-2" x="43.7" y="210.7" width="13.6" height="39.2"/>
+      <rect class="cls-1" x="58.8" y="219.1" width="18.5" height="18.4"/>
+      <rect class="cls-1" x="8.5" y="219.1" width="18.5" height="18.4"/>
+      <rect class="cls-1" x="51.5" y="193.6" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="65.9" y="193.6" width="11.5" height="11.5"/>
+      <rect class="cls-1" x="14.3" y="5.6" width="10.6" height="11.5"/>
+      <rect class="cls-1" x="29.9" y="5.6" width="10.6" height="11.5"/>
+      <rect class="cls-1" x="45.5" y="5.6" width="10.6" height="11.5"/>
+      <rect class="cls-1" x="61" y="5.6" width="10.6" height="11.5"/>
+      <rect class="cls-1" x="14.3" y="19.8" width="10.6" height="11.5"/>
+      <rect class="cls-1" x="29.9" y="19.8" width="10.6" height="11.5"/>
+      <rect class="cls-1" x="45.5" y="19.8" width="10.6" height="11.5"/>
+      <rect class="cls-1" x="61" y="19.8" width="10.6" height="11.5"/>
+      <rect class="cls-1" x="14.3" y="34.1" width="10.6" height="11.5"/>
+      <rect class="cls-1" x="29.9" y="34.1" width="10.6" height="11.5"/>
+      <rect class="cls-1" x="45.5" y="34.1" width="10.6" height="11.5"/>
+      <rect class="cls-1" x="61" y="34.1" width="10.6" height="11.5"/>
+    </g>
+  </g>
+</svg>
