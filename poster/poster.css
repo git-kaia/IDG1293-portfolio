@@ -1,130 +1,121 @@
 @font-face {
   font-family: "OpenSans-Regular";
-  src: url(assets/fonts/OpenSans.Regular.ttf) format("truetype");
+  src: url("../poster/assets/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "OpenSans-ExtraBold";
-  src: url(assets/fonts/OpenSans-ExtraBold.ttf) format("truetype");
+  src: url("../poster/assets/fonts/OpenSans-ExtraBold.ttf") format("truetype");
 }
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 p,
 pre {
   font-family: "marydale", sans-serif;
 }
 
-.poster-container {
-  background-image: url(assets/web_poster2-02.png) no-repeat;
-  height: 100vh;
-}
-
-.header {
-  padding: 5% 2%;
-}
-.header__text {
-  width: 50%;
-}
-.header__text h1 {
-  font-family: OpenSans-ExtraBold, sans-serif;
-  color: #005ba7;
-  font-size: 6vw;
-  font-weight: 800;
-  line-height: 1.2em;
-  padding-bottom: 0.5em;
-  letter-spacing: 0px;
-}
-.header__text h1 span {
+span {
   color: #0fa15c;
 }
-.header__text h2 {
-  font-family: "marydale", sans-serif;
-  font-weight: 100%;
-  font-style: normal;
-  font-size: 3vw;
-  line-height: 1.2em;
+
+body {
+  background-color: black;
 }
 
-.section1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 18vw;
-}
-.section1__text--moon {
-  color: white;
-  margin-left: 5%;
-  max-width: 40%;
-  font-size: 2.5vw;
-  line-height: 1em;
-}
-.section1__svgs {
+.poster {
+  margin: auto auto;
+  max-height: 90vh;
   position: relative;
 }
-.section1__moon {
-  width: 30vw;
-  padding-right: 10vw;
+.poster .poster-background {
+  height: 100%;
+  z-index: -3;
 }
-.section1__moon .cls-1 {
+.poster .header {
+  padding: 2% 0 0 5%;
+  height: 10%;
+}
+.poster .header h1 {
+  font-family: OpenSans-Regular, sans-serif;
+  color: #005ba7;
+  font-size: 2%;
+  font-weight: 500;
+}
+.poster .header h2 {
+  font-family: "marydale", sans-serif;
+  font-style: normal;
+  font-size: 0.1%;
+  width: 25ch;
+}
+.poster .section1 {
+  display: flex;
+  justify-content: space-between;
+}
+.poster .section1__text {
+  color: white;
+  margin-left: 5%;
+  max-width: 27ch;
+  font-size: 1.2vw;
+  line-height: 1em;
+}
+.poster .section1__svgs {
+  position: relative;
+}
+.poster .section1__svgs__moon {
+  width: 100%;
+  position: absolute;
+}
+.poster .section1__svgs__moon .cls-1 {
   fill: #eaeae9;
   stroke-width: 4.21px;
 }
-.section1__moon .cls-1,
-.section1__moon .cls-2,
-.section1__moon .cls-3 {
+.poster .section1__svgs__moon .cls-1,
+.poster .section1__svgs__moon .cls-2,
+.poster .section1__svgs__moon .cls-3 {
   stroke: #231f20;
   stroke-miterlimit: 10;
 }
-.section1__moon .cls-4 {
+.poster .section1__svgs__moon .cls-4 {
   fill: #231f20;
 }
-.section1__moon .cls-4,
-.section1__moon .cls-5 {
+.poster .section1__svgs__moon .cls-4,
+.poster .section1__svgs__moon .cls-5 {
   stroke-width: 0px;
 }
-.section1__moon .cls-2 {
+.poster .section1__svgs__moon .cls-2 {
   fill: #fff;
 }
-.section1__moon .cls-2,
-.section1__moon .cls-3 {
+.poster .section1__svgs__moon .cls-2,
+.poster .section1__svgs__moon .cls-3 {
   stroke-width: 4.6px;
 }
-.section1__moon .cls-3 {
+.poster .section1__svgs__moon .cls-3 {
   fill: #b4b6b7;
 }
-.section1__moon .cls-5 {
+.poster .section1__svgs__moon .cls-5 {
   fill: #fff;
 }
-.section1__bigstar {
-  width: 8vw;
+.poster .section1__svgs__bigstar {
+  width: 3.5vw;
   position: absolute;
-  right: 10vw;
-  bottom: 20vw;
   animation: big-star 10s infinite linear;
 }
-.section1__bigstar .colour {
+.poster .section1__svgs__bigstar .colour {
   fill: #f5ec43;
   stroke: #231f20;
   stroke-miterlimit: 10;
   stroke-width: 4.6px;
 }
-.section1__smallstar {
-  width: 6vw;
+.poster .section1__svgs__smallstar {
+  width: 2.5vw;
   position: absolute;
-  right: 3vw;
-  top: 1vw;
+  right: 28vw;
+  top: 22.5vh;
   animation: small-star 5s infinite linear;
 }
-.section1__smallstar .colour-small {
+.poster .section1__svgs__smallstar .colour-small {
   fill: #f5ec43;
   stroke: #231f20;
   stroke-miterlimit: 10;
   stroke-width: 4.6px;
 }
-
 @keyframes small-star {
   0% {
     transform: rotate(0deg);
@@ -140,489 +131,4 @@ pre {
   100% {
     transform: rotate(0deg);
   }
-}
-.section2 {
-  display: flex;
-  padding-bottom: 15vw;
-  /*&__text {
-    &--strong {
-      font-size: 60px;
-    }*/
-}
-.section2__svg {
-  position: relative;
-}
-.section2__curvedtext {
-  width: 50vw;
-  font-family: "marydale", sans-serif;
-  padding-bottom: 20vw;
-}
-.section2__curvedtext #curve {
-  fill: none;
-  stroke: none;
-}
-.section2__car {
-  width: 45vw;
-  position: absolute;
-  left: 42vw;
-  bottom: 40vw;
-  bottom: 20vw;
-}
-.section2__car #carpath {
-  fill: none;
-  stroke: none;
-}
-.section2__car .outline {
-  stroke: #231f20;
-  stroke-miterlimit: 10;
-  stroke-width: 4.21px;
-}
-.section2__car .outline,
-.section2__car .class2 {
-  fill: #231f20;
-}
-.section2__car .class2,
-.section2__car .carcolour {
-  stroke-width: 0px;
-}
-.section2__car .carcolour {
-  fill: #c77161;
-}
-
-.section3 {
-  padding: 0;
-  margin: 0;
-  position: relative;
-}
-.section3__co2 {
-  z-index: 3;
-}
-.section3__co2__svg {
-  width: 4vw;
-  z-index: 7;
-}
-.section3__co2__svg .cls-1 {
-  fill: #231f20;
-}
-.section3__co2__svg .cls-1,
-.section3__co2__svg .cls-2 {
-  stroke-width: 0px;
-}
-.section3__co2__svg .cls-2 {
-  fill: #a1cf6d;
-}
-.section3__co2__svg .cls-3 {
-  fill: #0a0203;
-}
-.section3__co2__svg .cls-3,
-.section3__co2__svg .cls-4 {
-  stroke: #231f20;
-  stroke-miterlimit: 10;
-}
-.section3__co2__svg .cls-4 {
-  fill: #fff;
-  stroke-width: 4.6px;
-}
-.section3__co2__eyebrows {
-  width: 10vw;
-  z-index: 7;
-}
-.section3__co2__eyebrows .cls-1 {
-  fill: #231f20;
-}
-.section3__co2__eyebrows .cls-1,
-.section3__co2__eyebrows .cls-2 {
-  stroke-width: 0px;
-}
-.section3__co2__eyebrows .cls-2 {
-  fill: #a1cf6d;
-}
-.section3__co2__eyebrows .cls-3 {
-  fill: #0a0203;
-}
-.section3__co2__eyebrows .cls-3,
-.section3__co2__eyebrows .cls-4 {
-  stroke: #231f20;
-  stroke-miterlimit: 10;
-}
-.section3__co2__eyebrows .cls-4 {
-  fill: #fff;
-  stroke-width: 4.6px;
-}
-.section3__co2 .no1 {
-  position: absolute;
-  bottom: 55vw;
-  left: 10vw;
-  z-index: 7;
-  width: 6w;
-  animation: co2-number1 1s infinite linear;
-}
-.section3__co2 .no2 {
-  position: absolute;
-  bottom: 58vw;
-  left: 25vw;
-  z-index: 7;
-  animation: co2-number1 4s infinite linear;
-}
-.section3__co2 .no3 {
-  width: 6vw;
-  position: absolute;
-  bottom: 65vw;
-  left: 28vw;
-  z-index: 7;
-  animation: co2-number1 2s infinite linear;
-}
-.section3__co2 .no4 {
-  position: absolute;
-  bottom: 55vw;
-  left: 32vw;
-  z-index: 7;
-  animation: co2-number1 3s infinite linear;
-}
-.section3__co2 .no5 {
-  position: absolute;
-  bottom: 60vw;
-  left: 35vw;
-  z-index: 7;
-  animation: co2-number1 1s infinite linear;
-}
-.section3__co2 .no6 {
-  position: absolute;
-  bottom: 68vw;
-  left: 45vw;
-  z-index: 7;
-  animation: co2-number1 3s infinite linear;
-}
-.section3__co2 .no7 {
-  position: absolute;
-  bottom: 65vw;
-  left: 56vw;
-  z-index: 7;
-  animation: co2-number1 1s infinite linear;
-}
-.section3__co2 .no8 {
-  width: 6vw;
-  position: absolute;
-  bottom: 73vw;
-  left: 70vw;
-  z-index: 7;
-  animation: co2-number1 2s infinite linear;
-}
-.section3__co2 .no9 {
-  position: absolute;
-  bottom: 64vw;
-  left: 72vw;
-  z-index: 7;
-  animation: co2-number1 1s infinite linear;
-}
-.section3__co2 .no10 {
-  position: absolute;
-  bottom: 68vw;
-  left: 80vw;
-  z-index: 7;
-  animation: co2-number1 1s infinite linear;
-}
-.section3__co2 .no11 {
-  position: absolute;
-  bottom: 58vw;
-  left: 84vw;
-  z-index: 7;
-  animation: co2-number1 2s infinite linear;
-}
-.section3__earth {
-  position: relative;
-  z-index: 1;
-}
-.section3__earth__kid1 {
-  width: 22vw;
-  position: absolute;
-  bottom: 33vw;
-  left: 10vw;
-  z-index: 7;
-}
-.section3__earth__kid1 .cls-1,
-.section3__earth__kid1 .cls-2 {
-  stroke-width: 0px;
-}
-.section3__earth__kid1 .cls-1,
-.section3__earth__kid1 .cls-3 {
-  fill: #231f20;
-}
-.section3__earth__kid1 .cls-4 {
-  fill: #f5ec43;
-}
-.section3__earth__kid1 .cls-4,
-.section3__earth__kid1 .cls-5,
-.section3__earth__kid1 .cls-6,
-.section3__earth__kid1 .cls-7,
-.section3__earth__kid1 .cls-8,
-.section3__earth__kid1 .cls-3 {
-  stroke-miterlimit: 10;
-}
-.section3__earth__kid1 .cls-4,
-.section3__earth__kid1 .cls-5,
-.section3__earth__kid1 .cls-6,
-.section3__earth__kid1 .cls-8,
-.section3__earth__kid1 .cls-3 {
-  stroke: #231f20;
-}
-.section3__earth__kid1 .cls-4,
-.section3__earth__kid1 .cls-5,
-.section3__earth__kid1 .cls-7,
-.section3__earth__kid1 .cls-8,
-.section3__earth__kid1 .cls-3 {
-  stroke-width: 4.6px;
-}
-.section3__earth__kid1 .cls-5 {
-  fill: #b6a69e;
-}
-.section3__earth__kid1 .cls-6 {
-  fill: #a1cf6d;
-  stroke-width: 4.6px;
-}
-.section3__earth__kid1 .cls-7 {
-  fill: none;
-  stroke: #fff;
-}
-.section3__earth__kid1 .cls-2 {
-  fill: #fff;
-}
-.section3__earth__kid1 .cls-8 {
-  fill: #ad9282;
-}
-.section3__earth__kid2 {
-  width: 20vw;
-  position: absolute;
-  bottom: 39vw;
-  left: 40vw;
-  z-index: 7;
-}
-.section3__earth__kid2 .cls-1,
-.section3__earth__kid2 .cls-2,
-.section3__earth__kid2 .cls-3,
-.section3__earth__kid2 .cls-4 {
-  stroke-width: 0px;
-}
-.section3__earth__kid2 .cls-1,
-.section3__earth__kid2 .cls-5 {
-  fill: #231f20;
-}
-.section3__earth__kid2 .cls-6 {
-  fill: #fce0ce;
-}
-.section3__earth__kid2 .cls-6,
-.section3__earth__kid2 .cls-7,
-.section3__earth__kid2 .cls-5 {
-  stroke-miterlimit: 10;
-  stroke-width: 4.6px;
-}
-.section3__earth__kid2 .cls-6,
-.section3__earth__kid2 .cls-5 {
-  stroke: #231f20;
-}
-.section3__earth__kid2 .cls-2 {
-  fill: #00b1dc;
-}
-.section3__earth__kid2 .cls-3 {
-  fill: #c77161;
-}
-.section3__earth__kid2 .cls-7 {
-  fill: none;
-  stroke: #fff;
-}
-.section3__earth__kid2 .cls-4 {
-  fill: #fff;
-}
-.section3__earth__kid3 {
-  width: 22vw;
-  position: absolute;
-  bottom: 34vw;
-  left: 60vw;
-  z-index: 7;
-}
-.section3__earth__kid3 .cls-1,
-.section3__earth__kid3 .cls-2,
-.section3__earth__kid3 .cls-3 {
-  stroke-width: 0px;
-}
-.section3__earth__kid3 .cls-1,
-.section3__earth__kid3 .cls-4 {
-  fill: #231f20;
-}
-.section3__earth__kid3 .cls-2 {
-  fill: #0a0203;
-}
-.section3__earth__kid3 .cls-5 {
-  fill: #f5ec43;
-}
-.section3__earth__kid3 .cls-5,
-.section3__earth__kid3 .cls-6,
-.section3__earth__kid3 .cls-7,
-.section3__earth__kid3 .cls-8,
-.section3__earth__kid3 .cls-4 {
-  stroke-miterlimit: 10;
-}
-.section3__earth__kid3 .cls-5,
-.section3__earth__kid3 .cls-6,
-.section3__earth__kid3 .cls-8,
-.section3__earth__kid3 .cls-4 {
-  stroke: #231f20;
-}
-.section3__earth__kid3 .cls-5,
-.section3__earth__kid3 .cls-7,
-.section3__earth__kid3 .cls-8,
-.section3__earth__kid3 .cls-4 {
-  stroke-width: 4.6px;
-}
-.section3__earth__kid3 .cls-6 {
-  fill: #a1cf6d;
-  stroke-width: 4.6px;
-}
-.section3__earth__kid3 .cls-7 {
-  fill: none;
-  stroke: #fff;
-}
-.section3__earth__kid3 .cls-8 {
-  fill: #816c5d;
-}
-.section3__earth__kid3 .cls-3 {
-  fill: #fff;
-}
-.section3__earth__text {
-  font-size: 1.8vw;
-  line-height: 2.4vw;
-  font-weight: bold;
-}
-.section3__earth__text #text1 {
-  position: absolute;
-  bottom: 13.5vw;
-  left: 4.5vw;
-  z-index: 6;
-}
-.section3__earth__text #text2 {
-  position: absolute;
-  bottom: 27vw;
-  left: 37vw;
-  z-index: 6;
-}
-.section3__earth__text #text3 {
-  font-family: "marydale", sans-serif;
-  font-size: 5.5vw;
-  position: absolute;
-  left: 34vw;
-  bottom: 18vw;
-  z-index: 6;
-}
-.section3__earth__text #text4 {
-  position: absolute;
-  left: 38.5vw;
-  bottom: 1.9vw;
-  z-index: 6;
-}
-.section3__earth__text #text5 {
-  position: absolute;
-  right: 5.5vw;
-  bottom: 12.2vw;
-  z-index: 6;
-}
-.section3__earth__text #text6 {
-  position: absolute;
-  right: 3vw;
-  bottom: 0.01vw;
-  z-index: 6;
-}
-.section3__earth__svg {
-  position: relative;
-  z-index: 4;
-  margin-bottom: 0%;
-}
-.section3__earth__svg .cls-1 {
-  fill: #00b1dc;
-}
-.section3__earth__svg .cls-1,
-.section3__earth__svg .cls-2,
-.section3__earth__svg .cls-3,
-.section3__earth__svg .cls-4,
-.section3__earth__svg .cls-5 {
-  stroke: #231f20;
-  stroke-miterlimit: 10;
-}
-.section3__earth__svg .cls-1,
-.section3__earth__svg .cls-3 {
-  stroke-width: 4.6px;
-}
-.section3__earth__svg .cls-2,
-.section3__earth__svg .cls-6 {
-  fill: none;
-}
-.section3__earth__svg .cls-6 {
-  stroke-width: 0px;
-}
-.section3__earth__svg .cls-3 {
-  fill: #a1cf6d;
-}
-.section3__earth__svg .cls-4 {
-  fill: #fff;
-}
-.section3__earth__svg .cls-5 {
-  fill: #0a0203;
-}
-
-@keyframes co2-number1 {
-  0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(2vw);
-  }
-  40% {
-    transform: translateY(1vw);
-  }
-  55% {
-    transform: translateY(2vw);
-  }
-  75% {
-    transform: translateY(1vw);
-  }
-  100% {
-    transform: translateY(0vw);
-  }
-}
-.footer {
-  color: white;
-  background-color: white;
-  padding-top: 1vw;
-}
-.footer__top {
-  background-color: white;
-}
-.footer p {
-  width: 98vw;
-  font-weight: bold;
-  text-align: center;
-  color: black;
-  font-size: 1.2vw;
-}
-.footer__bottom {
-  background-color: #005ba7;
-  padding: 1vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footer__bottom__logo {
-  width: 35vw;
-  padding: 0 1.5vw 0 0;
-}
-.footer__bottom__divider {
-  width: 0.3vw;
-  align-self: self-start;
-  align-self: self-start;
-}
-.footer__bottom p {
-  color: white;
-  text-align: right;
-  padding: 0 15px;
-  font-size: 1.5vw;
-  line-height: 1.5vw;
 }/*# sourceMappingURL=poster.css.map */
