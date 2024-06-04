@@ -14,17 +14,19 @@
     box-sizing: border-box;
   }
   
-  main {
-    background: url(assets/web_poster2-02.png) no-repeat;
-    width: 100vw;
-    background-size: cover;
-  }
+ 
   
   p,
   pre {
     font-family: "marydale", sans-serif;
   }
-  
+
+  .poster-container {
+    background-image: url(assets/web_poster2-02.png) no-repeat;
+    // max-width: 50vw;
+    height: 100vh;
+  }
+
   .header {
     padding: 5% 2%;
   
