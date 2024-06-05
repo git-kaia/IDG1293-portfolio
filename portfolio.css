@@ -15,11 +15,16 @@ nav {
     width: 100vw;
     margin: 0;
     background-color: #B5E0B1;
+    background-image: url(./assets/birds-flying.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
 }
 
 a {
     text-decoration: none;
-    color: #4C6159;
+    color: #fff;
+    font-weight: bold;
 
 }
 
@@ -32,21 +37,24 @@ ul {
 li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    font-size: 1.6rem;
-    padding: 2% 0;
+    font-size: 1.8rem;
 }
 
 li :hover {
-    text-shadow: 7px 1px 5px #4C6159;
+    color: #000;
 }
 
 h1 {
     font-size: 3rem;
     font-weight: bold;
-    color: #E17676;
+    color: white;
 }
 
-
+.current {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .main-page {
     max-width: 1500px;
@@ -55,7 +63,13 @@ h1 {
     min-height: 50vh;
 }
 
+.main-page-about {
+    padding: 5%;
+}
 
+.main-page-about * {
+    padding: 1em 0;
+}
 
 .swiper {
     position: relative;
@@ -65,7 +79,7 @@ h1 {
 h2,
 h3,
 p {
-    padding: 0.5% 0;
+    padding: 0;
     text-align: left;
     margin: 0;
 }
@@ -75,11 +89,12 @@ h2 {
     font-weight: bold;
     color: #4C6159;
     max-width: 100vw;
-    padding: 5rem 0 5rem 2rem;
+    padding: 2rem 0 2rem 2rem;
 }
 
 p {
-    font-size: 0.7rem;
+    font-size: 1rem;
+    max-width: 70ch;
 
 }
 
@@ -88,20 +103,22 @@ span {
 }
 
 .handwritten {
-    display: flex;
-    justify-content: left;
     margin: 0;
     max-width: 100vw;
-
+    padding: 4em 0 0 2em;
 }
 
 .turbinado-font {
     font-family: "turbinado-pro", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #E17676;
-    padding: 3rem 1rem;
+}
+
+#arrow-down {
+    padding-left: 8.5em;
+    font-size: 3rem;
 }
 
 .swiper-container {
@@ -151,7 +168,7 @@ img:hover {
 .gallery-buttons {
     display: flex;
     justify-content: space-between;
-    padding: 5%;
+    padding: 0 5% 2%;
     min-width: 100vw;
 }
 
@@ -186,16 +203,7 @@ img:hover {
     right: 1em;
 }
 
-/* CONTACT PAGE */
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10% 5%;
-}
-
+/* FOOTER */
 .footer {
     padding: 5%;
     background-color: #ABE0CC;
@@ -210,7 +218,7 @@ form {
 @media screen and (min-width: 600px) {
 
     :root {
-        font-size: calc(1.5vw + 1rem);
+        font-size: calc(1.5vw 1rem 100%);
     }
 
     .swiper-slide {
@@ -220,16 +228,12 @@ form {
     .swiper-info {
         max-width: 40vw;
     }
-
-    .turbinado-font {
-        padding: 1rem 0 0 1rem;
-    }
 }
 
 @media screen and (min-width: 1000px) {
 
     :root {
-        font-size: calc(1.5vw + 1.2rem);
+        font-size: calc(1vw, 1.5rem, 100%);
     }
 
     .swiper-slide {
