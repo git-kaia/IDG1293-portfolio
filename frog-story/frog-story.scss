@@ -10,6 +10,7 @@ body {
     background-repeat: none;
     background-attachment: fixed;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 //GENERAL STYLING
@@ -208,7 +209,7 @@ p {
         }
     }
 
-    // forgs population jumping 
+    // forgs population jumping
     @keyframes bounce-frog1 {
         0%,
         100% {
@@ -325,7 +326,7 @@ p {
             transform: translateY(0);
             opacity: 1;
         }
-    } 
+    }
 }
 
 .ecosystem {
@@ -1719,5 +1720,14 @@ p {
         left: 5vw;
         animation: slideInFromLeft 2s forwards;
         color: black;
+    }
+}
+
+// Reduced motion
+
+@media (prefers-reduced-motion) {
+    * {
+        animation: none;
+        opacity: 1;
     }
 }

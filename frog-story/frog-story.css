@@ -10,6 +10,7 @@ body {
   background-repeat: none;
   background-attachment: fixed;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 h1,
@@ -1464,4 +1465,11 @@ p {
   left: 5vw;
   animation: slideInFromLeft 2s forwards;
   color: black;
+}
+
+@media (prefers-reduced-motion) {
+  * {
+    animation: none;
+    opacity: 1;
+  }
 }/*# sourceMappingURL=frog-story.css.map */

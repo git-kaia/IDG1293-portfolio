@@ -5,38 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IDG1293 Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/rex7ldj.css">
+    <script src="portfolio.js" defer></script>
 </head>
 
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">
-                    <h1>My web-dev portfolio</h1>
+            <li><a href="index.html" class="home-tab">
+                    <h1>MY WEB <br>
+                        PORTFOLIO</h1>
                 </a></li>
-            <li><a href="all-projects.html">All projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <div class="current home">
+                <li><a href="index.html">Home</a></li>
+                <p class="turbinado-font">&#x21DC; Current</p>
+            </div>
+            <li><a href="about.html">About</a></li>
         </ul>
     </nav>
+    <main class="main-page">
+        <h2>Advanced CSS Spring 2024</h2>
+        <div class="swiper">
 
-    <div>
-        <a href="frog-story/frog-story.html">
-            <figure><img src="assets/project-gallery/frog-story.png" alt="An image of website with a frog and a car.">
-                <figcaption>Scrollytale about a frog's challenges in life...</figcaption>
-            </figure>
-        </a>
-        <a href="poster/poster.html">
-            <figure><img src="assets/project-gallery/poster.png" alt="An image of website with a poster.">
-                <figcaption>A poster comes alive...</figcaption>
-            </figure>
-        </a>
-        <a href="finnbay/finnbay.html">
-            <figure><img src="assets/project-gallery/finn.png"
-                    alt="An image of website resembling the finn login page.">
-                <figcaption>Can you do with a replica?</figcaption>
-            </figure>
-        </a>
-    </div>
+            <div class="handwritten">
+                <p class="turbinado-font">Click image to explore the project<span class="arrow-down">&#x2926;</span></p>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-slide">
+                    <a href="frog-story/frog-story.html"><img src="assets/project-gallery/frog.svg"
+                            alt="An image of a frog in a pond."></a>
+                    <div class="swiper-info">
+                        <h3>A <span>scrollytale</span> of a frog's life</h3>
+                        <p>A project aiming to spread consciousness around the importance of frogs in our environment
+                            and what challenges they are facing.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="poster/poster.html">
+                        <img src="assets/project-gallery/poster.png" alt="An image of website with a poster."> </a>
+                    <div class="swiper-info">
+                        <h3>A <span>poster</span> with a <span>twist</span>-and-turn</h3>
+                        <p>This project is attempting to make a poster a little more interesting by adding some
+                            animations do drive the story and inform kids on electrical emissions.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="finnbay/finnbay.html">
+                        <img src="assets/project-gallery/finn.svg"
+                            alt="An image of website resembling the finn login page."></a>
+                    <div class="swiper-info">
+                        <h3>Can you do with a <span>replica</span>?</h3>
+                        <p>A project copying the login-page of finn.no. For those who don't necessarily need the
+                            original...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-buttons">
+            <button class="button-prev">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <button class="button-next">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </main>
+
+    <footer class="footer">
+    </footer>
 </body>
 
 </html>

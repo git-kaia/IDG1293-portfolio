@@ -19,7 +19,6 @@ const options = {
         console.log(entry.target.id, "is intersecting");
       } else {
         // If the element is out of view, remove animation class
-        // els2animate.forEach(el=>el.classList.add('animation-pause'));
         els2animate.forEach(el=>el.style["animation-play-state"] = "paused");
         // els2animate.forEach(el=>el.style["border"] = "unset");
         console.log(entry.target.id, "is nnot intersecting");
