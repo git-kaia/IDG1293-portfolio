@@ -304,6 +304,7 @@ img:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 2em;
   }
   .main-page-about__oblig3 {
     display: flex;
