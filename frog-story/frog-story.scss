@@ -1,6 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    line-height: 1.5em;
 }
 
 body {
@@ -37,12 +38,17 @@ p {
 .introduction {
     position: relative;
     height: 100vh;
-    padding: 20% 20%;
+    padding: 35% 20%;
 
     h1 {
         text-align: center;
         font-size: 7vw;
         animation: heading1 4s;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
     }
 }
 
@@ -54,10 +60,13 @@ p {
         text-align: center;
         animation: heading1 2s;
         padding: 2%;
+        font-size: 2em;
+        max-width: 60ch;
     }
 
     // frog 1 enter from the left
     &__frog--1 {
+        opacity: 0;
         position: absolute;
         width: 10vw;
         left: 10vw;
@@ -72,32 +81,50 @@ p {
 
     //forg 2, 3 and 4 enter from the right
     &__frog--2 {
+        opacity: 0;
         position: absolute;
         width: 10vw;
-        left: 85vw;
+        left: 70vw;
         top: 30vw;
         z-index: 2;
         opacity: 0;
         animation:
             enter-frog2 2s 3s,
-            bounce-frog2 1.5s 4s infinite;
+            bounce-frog2 1.7s 4s infinite;
         animation-fill-mode: forwards;
     }
 
     &__frog--3 {
+        opacity: 0;
         position: absolute;
         width: 10vw;
-        left: 75vw;
+        left: 50vw;
         top: 30vw;
         z-index: 2;
         opacity: 0;
         animation:
-            enter-frog3 1s 2.5s,
-            bounce-frog3 1.7s 5s infinite;
+            enter-frog3 1.2s 3s,
+            bounce-frog3 1.5s 5s infinite;
         animation-fill-mode: forwards;
     }
 
     &__frog--4 {
+        opacity: 0;
+        position: absolute;
+        width: 10vw;
+        left: 45vw;
+        top: 30vw;
+        z-index: 1;
+        opacity: 0;
+        animation:
+            enter-frog4 1.1s 2.5s,
+            bounce-frog4 1.7s 5s infinite;
+        animation-fill-mode: forwards;
+    }
+
+    // forg 5 enter from the left
+    &__frog--5 {
+        opacity: 0;
         position: absolute;
         width: 10vw;
         left: 25vw;
@@ -105,34 +132,25 @@ p {
         z-index: 1;
         opacity: 0;
         animation:
-            enter-frog4 1s 2.5s,
-            bounce-frog4 1.7s 5s infinite;
-        animation-fill-mode: forwards;
-    }
-
-    // forg 5 enter from the left
-    &__frog--5 {
-        position: absolute;
-        width: 10vw;
-        left: 15vw;
-        top: 30vw;
-        z-index: 1;
-        opacity: 0;
-        animation:
             enter-frog5 2s 3s,
             bounce-frog5 1.6s 4s infinite;
         animation-fill-mode: forwards;
+        opacity: 0;
     }
 
     @keyframes enter-frog1 {
         0% {
-            transform: translateX(0);
+            transform: translateX(200%);
             opacity: 0;
+        }
+
+        10% {
+            opacity: 1;
         }
 
         20% {
             opacity: 1;
-            transform: translateX(100%) translateY(-200%);
+            transform: translateY(-300%);
         }
 
         100% {
@@ -143,11 +161,14 @@ p {
 
     @keyframes enter-frog2 {
         0% {
-            transform: translateX(200%);
+            transform: translateX(300%);
             opacity: 0;
         }
+        10% {
+            opacity: 1;
+        }
 
-        20% {
+        90% {
             opacity: 1;
             transform: translateX(0) translateY(-150%);
         }
@@ -160,13 +181,16 @@ p {
 
     @keyframes enter-frog3 {
         0% {
-            transform: translateX(200%);
+            transform: translateX(-300%);
             opacity: 0;
         }
-
-        20% {
+        10% {
             opacity: 1;
-            transform: translateX(0) translateY(-100%);
+        }
+
+        50% {
+            opacity: 1;
+            transform: translateY(-100%);
         }
 
         100% {
@@ -177,13 +201,16 @@ p {
 
     @keyframes enter-frog4 {
         0% {
-            transform: translateX(0);
-            opacity: 0;
+            transform: translateX(300%);
+        }
+
+        10% {
+            opacity: 1;
         }
 
         20% {
             opacity: 1;
-            transform: translateX(100%) translateY(-100%);
+            transform: translateY(-300%);
         }
 
         100% {
@@ -194,13 +221,17 @@ p {
 
     @keyframes enter-frog5 {
         0% {
-            transform: translateX(0);
+            transform: translateX(300%);
             opacity: 0;
         }
 
-        20% {
+        10% {
             opacity: 1;
-            transform: translateX(200%) translateY(-100%);
+        }
+
+        70% {
+            opacity: 1;
+            transform:  translateY(-400%);
         }
 
         100% {
@@ -217,7 +248,7 @@ p {
             opacity: 1;
         }
         5% {
-            transform: translateY(-80%);
+            transform: translateY(-100%);
             opacity: 1;
         }
         15% {
@@ -335,6 +366,7 @@ p {
 
     h2 {
         text-align: center;
+        max-width: 50ch;
         font-size: 2em;
         padding: 2%;
         animation: heading1 2s;
@@ -479,9 +511,14 @@ p {
 
     &__heading {
         font-size: 3vw;
-        padding: 20% 20%;
+        padding: 0 20%;
         position: absolute;
         animation: break-message 1s forwards;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%)
     }
 }
 
@@ -933,6 +970,41 @@ p {
         animation-fill-mode: forwards;
     }
 
+    &__heading3-2 {
+        font-size: 3em;
+        font-family: 'turbinado-pro', sans-serif;
+        text-align: center;
+        position: absolute;
+        max-width: 60ch;
+        padding: 5%;
+        bottom: 10vw;
+        left: 5vw;
+        z-index: 3;
+        opacity: 0;
+        animation:
+            heading1 2s 2s;
+        animation-fill-mode: forwards;
+    }
+
+    &__action-button {
+        position: absolute;
+        font-family: sans-serif;
+        color: white;
+        font-size: 3em;
+        bottom: 15vw;
+        right: 40vw;
+        left: 40vw;
+        background-color: rgb(255, 189, 47);
+        border-color: rgb(255, 189, 47);
+        border-radius: 5px;
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
     @keyframes heading3 {
         0% {
             opacity: 0;
@@ -1343,6 +1415,7 @@ p {
         opacity: 0;
         position: absolute;
         top: 10vw;
+        bottom: 10vw;
         z-index: 2;
     }
 
@@ -1446,7 +1519,7 @@ p {
     &__heading {
         font-size: 3vw;
         position: absolute;
-        animation: break-message 1s forwards;
+        animation: break-message 0.7s forwards;
     }
 }
 
@@ -1507,6 +1580,7 @@ p {
     right: 30vw;
     background-color: rgba(198, 52, 52, 0.8); /* Red with transparency */
     font-family: sans-serif;
+    text-align: center;
     font-size: 2rem;
     color: white;
     padding: 10px;
@@ -1558,12 +1632,13 @@ p {
     &__heading2 {
         font-family: 'turbinado-pro', sans-serif;
         text-align: center;
+        line-height: 0.7em;
         max-width: 60ch;
         font-size: 2.7em;
         padding: 5%;
         position: absolute;
         left: 3vw;
-        top: 43vw;
+        bottom: 20vw;
         z-index: 2;
         opacity: 0;
         animation: heading1 2s 2s;
@@ -1630,7 +1705,7 @@ p {
         top: 0;
         left: 0;
         width: 100%;
-        height: 120%;
+        height: 110%;
         background-position: center;
         animation: night-sky 15s 2s;
         animation-fill-mode: forwards;
@@ -1729,7 +1804,7 @@ p {
     &__15 {
         width: 32vw;
         left: -40vw; /* Initially position the element outside the viewport */
-        top: 12vw;
+        top: 20vw;
         position: absolute;
         animation: slideInFromLeft 1.5s forwards; /* Apply the animation */
     }
@@ -1744,7 +1819,7 @@ p {
     }
     &__text {
         position: absolute;
-        top: 40vw;
+        top: 50vw;
         left: 5vw;
         animation: slideInFromLeft 2s forwards;
         color: black;
