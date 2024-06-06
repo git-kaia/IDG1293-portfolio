@@ -335,6 +335,7 @@ p {
 
     h2 {
         text-align: center;
+        font-size: 2em;
         padding: 2%;
         animation: heading1 2s;
         padding: 2%;
@@ -496,7 +497,7 @@ p {
 
 .habitat-loss {
     position: relative;
-    height: 110vh;
+    height: 100vh;
 
     &__heading1 {
         font-size: 2.5vw;
@@ -1260,7 +1261,7 @@ p {
 
 .apocalypse {
     position: relative;
-    height: 110vh;
+    height: 120vh;
 
     &__background-change {
         position: absolute;
@@ -1297,7 +1298,7 @@ p {
 
     &__heading4 {
         font-size: 2.5vw;
-        padding: 1%;
+        padding: 5% 1%;
         position: absolute;
         left: 3vw;
         top: 5vw;
@@ -1338,7 +1339,7 @@ p {
         font-family: sans-serif;
         font-size: 7em;
         text-align: center;
-        padding: 0 100px;
+        padding: 15vw 10vw;
         opacity: 0;
         position: absolute;
         top: 10vw;
@@ -1473,11 +1474,12 @@ p {
     }
 
     &__heading2 {
-        font-size: 1.5vw;
-        padding: 2% 1%;
+        font-size: 3em;
+        font-family: 'turbinado-pro', sans-serif;
+        padding: 5%;
         position: absolute;
         left: 3vw;
-        top: 3vw;
+        bottom: 25vw;
         z-index: 2;
         opacity: 0;
         animation: heading1 2s 2s;
@@ -1491,37 +1493,41 @@ p {
         position: absolute;
 
         &:hover {
-            transform: translateX(20vh);
+            // animation: bounce 1s forwards;
             // Use visibility property on the adjacent warning box
             + .touch-frog__warning-box {
                 visibility: visible;
             }
         }
     }
-    &__warning-box {
-        position: absolute;
-        top: 20%; /* Distance from frog */
-        left: 30%; /* Distance from right edge */
-        background-color: rgba(255, 0, 0, 0.8); /* Red with transparency */
-        color: white;
-        padding: 10px;
-        border-radius: 5px;
-        visibility: hidden; /* Initially hidden */
-        transition: visibility 0.3s ease; /* Add transition for smooth appearance */
-        z-index: 1;
-    }
-}
-.touch-frog__warning-box {
+    &__warning-box {    
     position: absolute;
-    top: 20%; /* Distance from frog */
-    left: 30%; /* Distance from right edge */
-    background-color: rgba(255, 0, 0, 0.8); /* Red with transparency */
+    top: 17vw; /* Distance from frog */
+    left: 30vw; /* Distance from right edge */
+    right: 30vw;
+    background-color: rgba(198, 52, 52, 0.8); /* Red with transparency */
+    font-family: sans-serif;
+    font-size: 2rem;
     color: white;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 25px;
+    box-shadow:  1px 1px 10px 10px rgba(198, 52, 52, 0.8);
     visibility: hidden; /* Initially hidden */
     transition: visibility 0.3s ease; /* Add transition for smooth appearance */
     z-index: 1;
+    }
+}
+
+#arrow {
+    position: relative;
+    top: 0.7em;
+    font-size: 1.5em;
+}
+
+#arrow-bottom {
+    font-size: 1.5em;
+    position: relative;
+    top: 0.3em;
 }
 
 //FROG
@@ -1544,18 +1550,20 @@ p {
         padding: 1%;
         position: absolute;
         left: 3vw;
-        top: 2vw;
         z-index: 2;
         animation: heading1 2s;
         animation-fill-mode: forwards;
     }
 
     &__heading2 {
-        font-size: 1.5vw;
-        padding: 2% 1%;
+        font-family: 'turbinado-pro', sans-serif;
+        text-align: center;
+        max-width: 60ch;
+        font-size: 2.7em;
+        padding: 5%;
         position: absolute;
         left: 3vw;
-        top: 5vw;
+        top: 43vw;
         z-index: 2;
         opacity: 0;
         animation: heading1 2s 2s;
@@ -1563,13 +1571,15 @@ p {
     }
 
     &__action-button {
-        display: none;
-        position: fixed;
-        top: 5vw;
-        right: 30%;
-        background-color: rgb(219, 139, 41);
-        padding: 20px 20px;
-        border: none;
+        // display: none;
+        position: absolute;
+        font-family: sans-serif;
+        font-size: 3em;
+        bottom: 10vw;
+        right: 40vw;
+        left: 40vw;
+        background-color: rgb(255, 189, 47);
+        border-color: rgb(255, 189, 47);
         border-radius: 5px;
         cursor: pointer;
 
@@ -1582,13 +1592,13 @@ p {
 .cat-walk {
     display: block;
     position: relative;
-    height: 120vh;
+    height: 100vh;
 
     &__heading1 {
         font-size: 2.5vw;
         position: absolute;
-        padding: 5%;
-        top: 6vw;
+        padding: 1%;
+        top: 10vw;
         left: 1vw;
         z-index: 3;
         opacity: 0;
@@ -1599,16 +1609,19 @@ p {
     }
 
     &__heading2 {
-        font-size: 1.5vw;
+        font-size: 3em;
+        font-family: 'turbinado-pro', sans-serif;
+        text-align: center;
         position: absolute;
+        max-width: 60ch;
         padding: 5%;
-        top: 10vw;
+        bottom: 10vw;
         left: 1vw;
         z-index: 3;
         opacity: 0;
         animation:
             heading1 2s 2s,
-            white-text 10s 4s;
+            white-text 13s 4s;
         animation-fill-mode: forwards;
     }
 
@@ -1617,39 +1630,54 @@ p {
         top: 0;
         left: 0;
         width: 100%;
-        height: 110%;
+        height: 120%;
         background-position: center;
-        animation: night-sky 10s 2s;
+        animation: night-sky 15s 2s;
         animation-fill-mode: forwards;
     }
     &__moon {
+        opacity: 0;
         width: 20vh;
         left: 80vw;
         top: 5vw;
         position: absolute;
+        animation: heading1 7s 3s,
+        fade-out 5s 10s;
     }
     &__cat--walk {
         left: 70vw;
-        top: 25vw;
+        top: 35vw;
         display: inline-block;
         position: absolute;
         max-width: 20vh;
         height: 20vh;
         left: 15vw;
-        bottom: -10vw; // Start position off the bottom
+        // bottom: -10vw; // Start position off the bottom
+        opacity: 0;
         animation:
-            move-cat 5s forwards,
-            fade-out 2s 4s forwards; // Chain animations
+            move-cat 7s 4s forwards;
+            // fade-out 2s 4s forwards; // Chain animations
+        
     }
 }
 @keyframes move-cat {
     0% {
-        bottom: 5vw; // Start off the bottom
-        left: 100vw;
+      transform: translateX(400%);
+      opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 0;
     }
     100% {
-        bottom: calc(75% - 15vw); // End position at the top corner
-        left: 5vh;
+        transform: translateX(-200%);
     }
 }
 
@@ -1723,10 +1751,27 @@ p {
     }
 }
 
+// ANIMATIONS DISSAPPEAR
+
+.exit-transition {
+    animation: exit 1s;
+    // transform: none;
+}
+
+@keyframes exit {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 // Reduced motion
 
 @media (prefers-reduced-motion) {
-    * {
+    .habitat-loss__ {
         animation: none;
         opacity: 1;
     }
