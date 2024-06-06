@@ -12,18 +12,26 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 p,
 pre {
   font-family: "marydale", sans-serif;
 }
 
 .poster-container {
-  background-image: url(assets/web_poster2-02.png) no-repeat;
-  height: 100vh;
+  position: relative;
+}
+.poster-container .poster-background {
+  position: absolute;
+  width: 100vw;
+  z-index: -100;
 }
 
 .header {
-  padding: 5% 2%;
+  padding: 4% 2%;
 }
 .header__text {
   width: 50%;
@@ -31,10 +39,9 @@ pre {
 .header__text h1 {
   font-family: OpenSans-ExtraBold, sans-serif;
   color: #005ba7;
-  font-size: 6vw;
-  font-weight: 800;
+  font-size: 4vw;
   line-height: 1.2em;
-  padding-bottom: 0.5em;
+  padding: 0 0 1rem 3rem;
   letter-spacing: 0px;
 }
 .header__text h1 span {
@@ -44,15 +51,17 @@ pre {
   font-family: "marydale", sans-serif;
   font-weight: 100%;
   font-style: normal;
-  font-size: 3vw;
+  font-size: 2.2vw;
   line-height: 1.2em;
+  padding-left: 3rem;
+  max-width: 30ch;
 }
 
 .section1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 18vw;
+  padding-bottom: 2vw;
 }
 .section1__text--moon {
   color: white;
@@ -60,6 +69,7 @@ pre {
   max-width: 40%;
   font-size: 2.5vw;
   line-height: 1em;
+  padding-top: 2vw;
 }
 .section1__svgs {
   position: relative;
@@ -143,34 +153,29 @@ pre {
 }
 .section2 {
   display: flex;
-  padding-bottom: 15vw;
-  /*&__text {
-    &--strong {
-      font-size: 60px;
-    }*/
-}
-.section2__svg {
   position: relative;
+  padding-bottom: 10vw;
+  /*&__text {
+      &--strong {
+        font-size: 60px;
+      }*/
 }
 .section2__curvedtext {
-  width: 50vw;
-  font-family: "marydale", sans-serif;
-  padding-bottom: 20vw;
-}
-.section2__curvedtext #curve {
-  fill: none;
-  stroke: none;
+  width: 60vw;
+  padding: 2vw 0 0 5vw;
 }
 .section2__car {
   width: 45vw;
   position: absolute;
-  left: 42vw;
-  bottom: 40vw;
-  bottom: 20vw;
+  left: 45vw;
+  z-index: 2;
+  bottom: 30vw;
 }
 .section2__car #carpath {
   fill: none;
   stroke: none;
+  position: absolute;
+  z-index: 0;
 }
 .section2__car .outline {
   stroke: #231f20;
@@ -332,6 +337,7 @@ pre {
 .section3__earth {
   position: relative;
   z-index: 1;
+  width: 100vw;
 }
 .section3__earth__kid1 {
   width: 22vw;
@@ -591,7 +597,7 @@ pre {
 .footer {
   color: white;
   background-color: white;
-  padding-top: 1vw;
+  width: 100vw;
 }
 .footer__top {
   background-color: white;
@@ -616,12 +622,10 @@ pre {
 }
 .footer__bottom__divider {
   width: 0.3vw;
-  align-self: self-start;
-  align-self: self-start;
 }
 .footer__bottom p {
   color: white;
-  text-align: right;
+  text-align: center;
   padding: 0 15px;
   font-size: 1.5vw;
   line-height: 1.5vw;
