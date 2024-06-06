@@ -3,7 +3,7 @@
 const options = {
     root: null, // viewport
     rootMargin: '0px',
-    threshold: 0.5 // When 50% of the element is visible
+    threshold: 0.7 // When 70% of the element is visible
   };
   
   // Callback function when intersection occurs
@@ -20,6 +20,7 @@ const options = {
       } else {
         // If the element is out of view, remove animation class
         els2animate.forEach(el=>el.style["animation-play-state"] = "paused");
+        // els2animate.forEach(el=>el.classList.add('exit-transition'));
         // els2animate.forEach(el=>el.style["border"] = "unset");
         console.log(entry.target.id, "is nnot intersecting");
       }
