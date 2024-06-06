@@ -231,7 +231,7 @@ p {
 
         70% {
             opacity: 1;
-            transform:  translateY(-400%);
+            transform: translateY(-400%);
         }
 
         100% {
@@ -518,7 +518,7 @@ p {
         position: absolute;
         top: 50%;
         -ms-transform: translateY(-50%);
-        transform: translateY(-50%)
+        transform: translateY(-50%);
     }
 }
 
@@ -972,7 +972,7 @@ p {
 
     &__heading3-2 {
         font-size: 3em;
-        font-family: 'turbinado-pro', sans-serif;
+        font-family: "turbinado-pro", sans-serif;
         text-align: center;
         position: absolute;
         max-width: 60ch;
@@ -981,8 +981,7 @@ p {
         left: 5vw;
         z-index: 3;
         opacity: 0;
-        animation:
-            heading1 2s 2s;
+        animation: heading1 2s 2s;
         animation-fill-mode: forwards;
     }
 
@@ -1548,7 +1547,7 @@ p {
 
     &__heading2 {
         font-size: 3em;
-        font-family: 'turbinado-pro', sans-serif;
+        font-family: "turbinado-pro", sans-serif;
         padding: 5%;
         position: absolute;
         left: 3vw;
@@ -1573,22 +1572,22 @@ p {
             }
         }
     }
-    &__warning-box {    
-    position: absolute;
-    top: 17vw; /* Distance from frog */
-    left: 30vw; /* Distance from right edge */
-    right: 30vw;
-    background-color: rgba(198, 52, 52, 0.8); /* Red with transparency */
-    font-family: sans-serif;
-    text-align: center;
-    font-size: 2rem;
-    color: white;
-    padding: 10px;
-    border-radius: 25px;
-    box-shadow:  1px 1px 10px 10px rgba(198, 52, 52, 0.8);
-    visibility: hidden; /* Initially hidden */
-    transition: visibility 0.3s ease; /* Add transition for smooth appearance */
-    z-index: 1;
+    &__warning-box {
+        position: absolute;
+        top: 17vw; /* Distance from frog */
+        left: 30vw; /* Distance from right edge */
+        right: 30vw;
+        background-color: rgba(198, 52, 52, 0.8); /* Red with transparency */
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+        padding: 10px;
+        border-radius: 25px;
+        box-shadow: 1px 1px 10px 10px rgba(198, 52, 52, 0.8);
+        visibility: hidden; /* Initially hidden */
+        transition: visibility 0.3s ease; /* Add transition for smooth appearance */
+        z-index: 1;
     }
 }
 
@@ -1630,7 +1629,7 @@ p {
     }
 
     &__heading2 {
-        font-family: 'turbinado-pro', sans-serif;
+        font-family: "turbinado-pro", sans-serif;
         text-align: center;
         line-height: 0.7em;
         max-width: 60ch;
@@ -1685,7 +1684,7 @@ p {
 
     &__heading2 {
         font-size: 3em;
-        font-family: 'turbinado-pro', sans-serif;
+        font-family: "turbinado-pro", sans-serif;
         text-align: center;
         position: absolute;
         max-width: 60ch;
@@ -1716,8 +1715,9 @@ p {
         left: 80vw;
         top: 5vw;
         position: absolute;
-        animation: heading1 7s 3s,
-        fade-out 5s 10s;
+        animation:
+            heading1 7s 3s,
+            fade-out 5s 10s;
     }
     &__cat--walk {
         left: 70vw;
@@ -1729,16 +1729,14 @@ p {
         left: 15vw;
         // bottom: -10vw; // Start position off the bottom
         opacity: 0;
-        animation:
-            move-cat 7s 4s forwards;
-            // fade-out 2s 4s forwards; // Chain animations
-        
+        animation: move-cat 7s 4s forwards;
+        // fade-out 2s 4s forwards; // Chain animations
     }
 }
 @keyframes move-cat {
     0% {
-      transform: translateX(400%);
-      opacity: 0;
+        transform: translateX(400%);
+        opacity: 0;
     }
     20% {
         opacity: 1;
@@ -1820,17 +1818,38 @@ p {
     &__text {
         position: absolute;
         top: 50vw;
-        left: 5vw;
-        animation: slideInFromLeft 2s forwards;
+        right: 5vw;
+        font-family: "turbinado-pro", sans-serif;
+        font-size: 4em;
+        animation: slideInFromRight 2s forwards;
         color: black;
     }
-}
 
-// ANIMATIONS DISSAPPEAR
+    @keyframes slideInFromRight {
+        from {
+            right: -40vw; /* Starting position outside the viewport */
+        }
+        to {
+            right: 5vw; /* Final position */
+        }
+    }
 
-.exit-transition {
-    animation: exit 1s;
-    // transform: none;
+    &__action-button {
+        position: absolute;
+        font-family: sans-serif;
+        font-size: 3em;
+        bottom: 10vw;
+        left: 10vw;
+        background-color: rgb(255, 189, 47);
+        border-color: rgb(255, 189, 47);
+        border-radius: 5px;
+        cursor: pointer;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
 }
 
 @keyframes exit {
@@ -1846,8 +1865,11 @@ p {
 // Reduced motion
 
 @media (prefers-reduced-motion) {
-    .habitat-loss__ {
-        animation: none;
-        opacity: 1;
+    * {
+        animation-delay: -1s !important;
+        animation-duration: 1s !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0s !important;
     }
 }
